@@ -1,0 +1,23 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin btn-reset {
+  border: none;
+  background-color: transparent;
+}
+
+@mixin min_tablet_max_desktop {
+  @media (min-width: $tablet-width) and (max-width: 1149px) {
+    @content;
+  }
+}
+
+@mixin min($media) {
+  @media (min-width: $media) {
+    @content;
+  }
+}

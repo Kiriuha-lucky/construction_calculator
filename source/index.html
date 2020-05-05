@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Construction_calculator</title>
+    <style>
+        canvas {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+<form action="" class="room_parameters">
+    <fieldset class="form__group">
+        <legend class="form__group-title">Размер комнаты</legend>
+        <div class="form__subgroup">
+            <ul class="form__list d-flex flex-column">
+                <li class="form__item">
+                    <label class="parameters" for="room_length">Длина комнаты, м</label>
+                    <input class="parameters" type="text" id="room_length" name="form-type">
+                </li>
+                <li class="form__item">
+                    <label class="parameters" for="room_width">Ширина комнаты, м</label>
+                    <input class="parameters" type="text" id="room_width" name="form-type">
+                </li>
+                <li class="form__item">
+                    <label class="parameters" for="room_height">Высота комнаты, м</label>
+                    <input class="parameters" type="text" id="room_height" name="form-type">
+                </li>
+                <li class="form__item">
+                    <p>Площадь комнаты <span class="room_area">0</span> кв.м</p>
+                </li>
+                <li class="form__item">
+                    <p>Площадь отделки стен <span class="wall_area">0</span>кв.м</p>
+                </li>
+            </ul>
+        </div>
+    </fieldset>
+</form>
+<button class="btn btn-dark">Посчитать</button>
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default">Длина</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Sizing example input"
+           aria-describedby="inputGroup-sizing-default">
+</div>
+<canvas id="constructor" width="1000px" height="600px">
+    <p>Ваш браузер не поддерживает рисование.</p>
+</canvas>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jcanvas.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
